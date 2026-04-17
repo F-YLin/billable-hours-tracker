@@ -1,4 +1,3 @@
-# ⚖️ Billable Hours Tracker
 
 # ⚖️ Billable Hours Tracker
 
