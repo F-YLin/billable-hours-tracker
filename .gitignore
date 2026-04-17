@@ -1,0 +1,5 @@
+.venv/
+billable_hours.db
+__pycache__/
+*.pyc
+.DS_Store
