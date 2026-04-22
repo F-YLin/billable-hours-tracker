@@ -29,6 +29,25 @@ is increasingly built in professional environments.
 3. Run the app: `streamlit run app.py`
 4. Open your browser at `http://localhost:8501`
 
+
+
+## Future Improvements
+
+**Data Import & Migration**
+Allow existing users to import billable hours from a CSV file, enabling lawyers switching from other tools like Clio or Excel to bring their historical data over. The main challenge would be data cleaning — handling inconsistent column names, date formats, and hour values.
+
+**Password Recovery**
+Implement email-based password reset using a service like SendGrid — generate a secure one-time token, store it temporarily in the database, and email the user a reset link with a 15-minute expiration.
+
+**PDF Invoice Generation**
+Allow users to generate a professional invoice PDF per client, pulling from logged hours and the client's hourly rate. This would make the tool immediately usable in a real billing workflow.
+
+**Multi-user Firm Support**
+Currently each account is independent. A future version could support a law firm as an organization with multiple attorney accounts, shared client rosters, and an admin dashboard for managing billing across the team.
+
+**Persistent Cloud Deployment**
+SQLite resets on Streamlit Cloud's free tier. A production version would use PostgreSQL hosted on a service like Supabase or Railway for persistent, reliable data storage.
+
 ## Future Improvements
 - Email-based password recovery
 - PDF invoice generation
